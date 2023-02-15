@@ -1,0 +1,62 @@
+#include <iostream>
+#include "stdlib.h"
+
+using namespace std;
+
+//prototipos
+void circulo();
+void circunferencia();
+
+
+//main
+void main() {
+	int opcion;
+	do {
+		cout << "Menu" << endl;
+		cout << "=======" << endl << endl;
+		cout << "1. Calcular el area de una circulo" << endl;
+		cout << "2. Calcular el area de un cilindro" << endl;
+		/*cout << "3. Determinar si un numero es primo o no" << endl;*/
+		cout << "0. Salir" << endl;
+		cout << "Ingrese la opcion:";
+		cin >> opcion;
+		switch (opcion) {
+		case 1: circulo();
+			break;
+			
+		case 2: circunferencia();
+			break;
+	
+		case 0: cout << "Salir";
+			break;
+		default: cout << "Opcion invalida";
+
+		}
+		system("pause");
+		system("cls");
+
+	} while (opcion != 0);
+
+}
+
+// funciones
+void circulo()
+{
+	float r, area;
+	cout << "Ingrese el radio: ";
+	cin >> r;
+	area = (3.14 / 4) * (r * r);
+	cout << "El area del circulo es: " << area<<endl;
+
+} 
+void circunferencia()
+{
+	float r, h, area;
+	cout << "Ingrese el radio: ";
+	cin >> r;
+	cout << "Ingrese la altura: ";
+	cin >> h;
+    area = 2 * 3.14 * r * (r + h);
+	cout << "El area del cilindro es: " << area<<endl;
+
+}
