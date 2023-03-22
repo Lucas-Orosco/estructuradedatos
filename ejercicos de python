@@ -1,0 +1,33 @@
+Ejercicio 7
+peso= float(input("cual es tu peso?"))
+altura= float(input("cual es tu altura?"))
+imc= peso/altura**2
+input("tu indice de IMC es: " + str(imc))
+Ejercicio 10
+pesodelpayaso= 112
+pesomuñeca= 75
+payaso= int(input("ingrese el nro de payasos: "))
+muñeca= int(input("ingrese el nro de muñecas: "))
+pesototal= pesodelpayaso*payaso+pesomuñeca*muñeca
+input("el peso total es: " + str(pesototal))
+Ejercicio 5
+horas = float(input("Introduce tus horas de trabajo: "))
+coste = float(input("Introduce lo que cobras por hora: "))
+paga = horas * coste
+print("Tu paga es", paga)
+
+Condicionales
+Ejercicio 1
+edad= int(input("ingrese la edad: "))
+if (edad>18):
+    print("eres mayor de edad")
+else :
+    print("eres menor de edad")
+
+edad= int(input("ingrese la edad: "))
+genero=input("ingrese el genero: ")    
+if (edad>60 and  str(genero)):
+    print("eres jubilado")
+else :
+    print("No eres jubilado")
+
